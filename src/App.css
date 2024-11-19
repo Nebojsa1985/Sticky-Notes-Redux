@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-size: large;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+body {
+  background-color: rgb(116, 86, 66);
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+button {
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+}
+
+.headingSmall {
+  color: rgb(170, 204, 184);
+  text-shadow: 1px 1px 2px rgb(33, 156, 21), 0 0 1em rgb(139, 28, 69),
+    0 0 0.2em rgb(155, 40, 40);
+}
+
+.saveTextDiv {
+  color: rgb(170, 204, 184);
+  text-shadow: 1px 1px 2px rgb(12, 74, 34), 0 0 1em rgb(14, 91, 30),
+    0 0 0.2em rgb(20, 101, 55);
+}
+.menuDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.inputName {
+  width: 200px;
+}
+
+.inputText {
+  width: 400px;
+}
+.inputText::-webkit-input-placeholder {
+  transform: translateY(33px);
+}
+
+textarea:focus {
+  outline: none;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.addBtn {
+  background-color: rgb(170, 204, 184);
+  border: 1px solid gray;
+  padding: 2px;
+  width: 200px;
+  height: 100px;
+}
+
+.saveBtn {
+  background-color: rgb(108, 192, 112);
+  border: 1px solid gray;
+  padding: 2px;
+  width: 200px;
+  height: 100px;
+}
+
+.allDivs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+.reducerDivs {
+  border: none;
+  border-radius: 4px;
+  margin: 8px;
+  background-color: rgb(254, 255, 156);
+  min-height: 300px;
+  width: 300px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.reducerDivsName {
+  width: 290px;
+  overflow-wrap: break-word;
+  padding: 10px;
+}
+.reducerDivsText {
+  width: 290px;
+  overflow-wrap: break-word;
+  padding: 4px;
+  color: rgb(40, 24, 24);
+}
+
+.reducerDivsTimer {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: rgb(120, 120, 120);
+  font-size: small;
+}
+
+.reducerDivsEditBtn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.reducerDivsCloseBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.reducerDivsCloseBtn:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 420px) {
+  .headingDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputName {
+    width: 78vw;
+  }
+
+  .inputText {
+    width: 78vw;
+    height: 100px;
+    margin-top: 5px;
+  }
+  .inputText::-webkit-input-placeholder {
+    transform: translateY(0px);
+  }
+  .addBtn {
+    width: 80vw;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .saveBtn {
+    width: 80vw;
+    height: 50px;
+    margin-top: 5px;
+  }
+  .allDivs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+  .headingDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .allDivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .inputName {
+    width: 78vw;
+  }
+
+  .inputText {
+    width: 78vw;
+    height: 100px;
+    margin-top: 5px;
+  }
+  .inputText::-webkit-input-placeholder {
+    transform: translateY(0px);
+  }
+  .addBtn {
+    width: 80vw;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .saveBtn {
+    width: 80vw;
+    height: 50px;
+    margin-top: 5px;
+  }
+}
